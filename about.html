@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Portfolio</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #1d1d1f;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.72);
+            backdrop-filter: saturate(180%) blur(20px);
+            -webkit-backdrop-filter: saturate(180%) blur(20px);
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .swiper {
+            width: 100%;
+            height: 60vh;
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .section-title { font-size: 3.5rem; font-weight: 700; letter-spacing: -0.015em; line-height: 1.1; }
+        .section-subtitle { font-size: 1.5rem; color: #86868b; font-weight: 400; }
+        
+        /* 圓潤的大頭照樣式 */
+        .profile-image {
+            width: 100%;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 2rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="glass-nav fixed w-full z-50 top-0">
+        <div class="max-w-5xl mx-auto px-6 h-12 flex items-center justify-center space-x-12 text-sm">
+            <a href="index.html" class="text-gray-600 hover:text-black transition">Home</a>
+            <a href="about.html" class="text-black font-semibold">個人介紹</a>
+            <a href="experience.html" class="text-gray-600 hover:text-black transition">經歷</a>
+            <a href="contact.html" class="text-gray-600 hover:text-black transition">聯絡方式</a>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-32 bg-[#f5f5f7]"> <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-12 gap-16 items-center">
+            
+            <div class="md:col-span-5" data-aos="fade-right">
+                <img src="C:\Users\evan3\OneDrive - 逢甲大學\網站\5A16613B-9F82-4E05-B854-E98D572415A3.jpg" alt="Evan Liang" class="profile-image">
+            </div>
+
+            <div class="md:col-span-7 text-left" data-aos="fade-left" data-aos-delay="100">
+                <h1 class="section-title mb-6">自我介紹。</h1>
+                <p class="section-subtitle leading-relaxed">
+                    我是 Evan Liang 梁瑋宸，一名熱衷於跨領域的大學生。主要領域為人工智慧、FinTech、ESG 和 智慧製造。
+                </p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="C:\Users\evan3\OneDrive - 逢甲大學\網站\2024科技與人文.jpg"></div>
+                <div class="swiper-slide"><img src="C:\Users\evan3\OneDrive - 逢甲大學\網站\IMG_1665_0.JPG"></div>
+                <div class="swiper-slide"><img src="C:\Users\evan3\OneDrive - 逢甲大學\網站\11AAC229-98F6-4469-A578-D1F6353F3BD6.jpg"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-12">
+                <div data-aos="fade-up">
+                    <h3 class="text-xl font-semibold mb-4 text-blue-600">視覺辨識專長</h3>
+                    <p class="text-gray-500 leading-relaxed">
+                        熟練運用 YOLOv8、v10 等最新物體偵測框架。我擅長從底層資料集開始優化，透過精準的影像預處理與 Labeling 策略，提升模型在極端環境下的魯棒性。
+                    </p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-semibold mb-4 text-orange-600">模型優化經驗</h3>
+                    <p class="text-gray-500 leading-relaxed">
+                        專注於模型的輕量化與部署。曾在 MSI Katana GF66 等硬體設備上進行效能調校，確保在維持高 mAP 的同時，達成低延遲的推論表現。
+                    </p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-semibold mb-4 text-green-600">解決問題導向</h3>
+                    <p class="text-gray-500 leading-relaxed">
+                        我的開發哲學是「技術服務於需求」。不論是水表自動辨識還是工業瑕疵檢測，我都能從使用者痛點出發，設計出最合適的技術架構。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-[#f5f5f7]">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-semibold mb-10" data-aos="fade-up">從程式碼到現實世界的橋樑。</h2>
+            <div class="space-y-8 text-xl text-gray-500 leading-loose text-left" data-aos="fade-up">
+                <p>
+                    在大學期間，我發現技術的價值不在於複雜度，而是在於其穩定性。這也是為什麼我選擇深鑽 YOLO 模型的原因——它快速、準確且極具生命力。
+                </p>
+                <p>
+                    我曾參與過多個專案，其中最具挑戰性的是「水表自動化辨識」。這不僅僅是訓練一個模型，更需要去理解光線、反光以及環境對感測器的影響，進而透過數據增強與負樣本訓練來克服挑戰。
+                </p>
+                <p>
+                    除了開發工作，我也熱衷於探索各種 AI 新技術，如 Ollama 本地部署與 LLM 的整合應用。目前正積極尋求能發揮視覺辨識與 AI 開發專長的機會。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-16 text-center text-gray-400 text-xs border-t border-gray-100">
+        Copyright © 2026 Evan Liang. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            speed: 800,
+            autoplay: { delay: 5000, disableOnInteraction: false },
+            pagination: { el: ".swiper-pagination", clickable: true },
+            effect: 'slide', 
+        });
+    </script>
+</body>
+</html>

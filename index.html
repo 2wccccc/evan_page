@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio | Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background: #000; color: #fff; font-family: -apple-system, system-ui; overflow: hidden; }
+        .nav-blur { background: rgba(0,0,0,0.8); backdrop-filter: blur(20px); }
+    </style>
+</head>
+<body>
+    <nav class="nav-blur fixed w-full top-0 h-12 flex items-center justify-center space-x-12 text-sm text-gray-400 z-50">
+        <a href="index.html" class="text-white">Home</a>
+        <a href="about.html" class="hover:text-white transition">個人介紹</a>
+        <a href="experience.html" class="hover:text-white transition">經歷</a>
+        <a href="contact.html" class="hover:text-white transition">聯絡方式</a>
+    </nav>
+
+    <section class="h-screen flex flex-col justify-center items-center text-center">
+        <h1 class="text-7xl font-semibold tracking-tighter mb-6 animate-pulse">Hello.</h1>
+        <p class="text-2xl text-gray-400 font-light">透過機器看見未來的無限可能</p>
+        <a href="about.html" class="mt-10 px-8 py-3 bg-white text-black rounded-full font-medium hover:bg-gray-200 transition">探索更多</a>
+    </section>
+</body>
+</html>
